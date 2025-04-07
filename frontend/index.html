@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Film Favorit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-lg">
+    <h1 class="text-2xl font-bold mb-4">🎬 Daftar Film Favorit</h1>
+    <form id="movie-form" class="space-y-2">
+      <input id="title" type="text" placeholder="Judul" class="w-full border p-2 rounded" required>
+      <input id="year" type="number" placeholder="Tahun" class="w-full border p-2 rounded" required>
+      <input id="rating" type="text" placeholder="Rating" class="w-full border p-2 rounded" required>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Tambah Film</button>
+    </form>
+    <ul id="movie-list" class="mt-6 space-y-2"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
